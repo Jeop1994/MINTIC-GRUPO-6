@@ -1,0 +1,24 @@
+header {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+body {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+div.col-sm {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-style: solid;
+    color: rgb(0, 0, 0);
+}
+
+div.col-sm:hover {
+    background-color: rgb(133, 133, 133);
+}
+
+div.bregistro {
+    padding-left: 500px;
+}
+
