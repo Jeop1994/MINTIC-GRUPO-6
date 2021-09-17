@@ -3,9 +3,9 @@ header {
     margin-right: 50px;
 }
 
-body {
-    margin-left: 25px;
-    margin-right: 25px;
+div.menu {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 div.col-sm {
