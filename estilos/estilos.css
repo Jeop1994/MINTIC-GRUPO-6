@@ -3,7 +3,7 @@ header {
     margin-right: 50px;
 }
 
-div.menu {
+#menu_principal {
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -18,7 +18,6 @@ div.col-sm:hover {
     background-color: rgb(133, 133, 133);
 }
 
-div.bregistro {
-    padding-left: 500px;
+#button_register {
+    border-radius: 30px;
 }
-
