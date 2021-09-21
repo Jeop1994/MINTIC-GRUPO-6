@@ -1,4 +1,6 @@
-header {
+
+
+#boton {
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -10,14 +12,37 @@ header {
 
 div.col-sm {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-width: 2px;
     border-style: solid;
     color: rgb(0, 0, 0);
 }
 
 div.col-sm:hover {
-    background-color: rgb(133, 133, 133);
+    background-color: rgb(110, 110, 110);
+    color: white;
 }
 
 #button_register {
     border-radius: 30px;
+    border-width: 2px;
+    border-color: black;
+}
+
+#button_register:hover {
+    background-color: rgb(110, 110, 110);
+}
+
+#button_register2 {
+    color: black;
+}
+
+#button_register2:hover {
+    color: white;
+}
+
+#form {
+    background-color: transparent;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
