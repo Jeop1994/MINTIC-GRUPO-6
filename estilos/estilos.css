@@ -1,6 +1,4 @@
-
-
-#boton {
+#button {
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -42,7 +40,24 @@ div.col-sm:hover {
 
 #form {
     background-color: transparent;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+#registro {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+#newregister {
+    color: black;
+    border-radius: 30px;
+    border-width: 2px;
+    border-color: black;
+}
+
+#newregister:hover {
+    background-color: rgb(110, 110, 110);
+    color: white;
 }
