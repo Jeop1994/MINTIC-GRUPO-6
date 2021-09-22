@@ -15,11 +15,11 @@
               <label>Nombre Completo:*</label>
               <input id="campo1" type="text">
               <label>Nombre de usuario:*</label>
-              <input id="campo2" type="text">
+              <input id="campoUsuario" type="text">
             </div>
             <div class="form-group">
                 <label>Contraseña:*</label>
-                <input id="campo3" type="password">
+                <input id="campoConstrasena" type="password">
                 <label>Confirmación de contraseña:*</label>
                 <input id="campo4" type="password">
             </div>
@@ -35,10 +35,9 @@
                 <label>Dirección de residencia:*</label>
                 <input id="campo8" type="text">
             </div>            
-            <button id="newregister" type="button" class="btn btn-outline-dark">
-                Registro
-            </button>
+            <input id="newregister" type="submit" onclick="return validar_usuario();" value="Registro"> 
         </form>
+        <div id="error"></div>
     </div>
 </body>
 </html>
