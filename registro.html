@@ -10,7 +10,7 @@
 </head>
 <body id="registro">
     <div class="form" id="form">
-        <form action="/action_page.php">
+        <form action="">
             <div class="form-group">
               <label>Nombre Completo:*</label>
               <input id="campo1" type="text">
@@ -35,7 +35,7 @@
                 <label>Dirección de residencia:*</label>
                 <input id="campo8" type="text">
             </div>            
-            <input id="newregister" type="submit" onclick="return validar_usuario();" value="Registro"> 
+            <input type="submit" id="newregister" onclick="return validar_usuario()"; value="Registro"> 
         </form>
         <div id="error"></div>
     </div>

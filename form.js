@@ -18,5 +18,5 @@ function validar_usuario() {
 
     error.innerHTML = mensajesError.join(", ");
 
-    return false; 
+    return false;
 }

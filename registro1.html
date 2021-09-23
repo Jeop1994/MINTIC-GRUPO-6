@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="estilo1.css">
+</head>
+<body>
+    <header>
+        <nav class="btn-registro">
+            <button id="button_register" type="button">
+                <a href="index1.html">Inicio</a>
+            </button>
+        </nav>
+        <h1 id="tituloRegistro">Registro Usuarios</h1>
+    </header>
+
+    <main>
+        <div class="menuRegistroUsuario" id="form">
+            <form action="">
+                <ul>
+                    <li><label>Nombre Completo:*</label></li>
+                    <li><input id="campo1" type="text"></li>
+                    <li><label>Nombre de usuario:*</label></li>
+                    <li><input id="campoUsuario" type="text"></li>
+                    <li><label>Contraseña:*</label></li>
+                    <li><input id="campoConstrasena" type="password"></li>
+                    <li><label>Confirmación de contraseña:*</label></li>
+                    <li><input id="campo4" type="password"></li>
+                    <li><label>Correo electrónico:*</label></li>
+                    <li><input id="campo5" type="email"></li>
+                    <li><label>Confirmación de correo:*</label></li>
+                    <li><input id="campo6" type="email"></li>
+                    <li><label>Telefono:*</label></li>
+                    <li><input id="campo7" type="text"></li>
+                    <li><label>Dirección de residencia:*</label></li>
+                    <li><input id="campo8" type="text"></li>  
+                </ul>
+                <input type="submit" id="newregister" value="Registro" onclick='return validar_usuario();'>
+            </form>    
+            <div id="error"></div>
+        </div>
+    </main>
+    
+</body>
+</html>

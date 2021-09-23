@@ -1,0 +1,167 @@
+#iconoMenu {
+    width: 30px;
+    height: 30px;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    background: #4E94AB;
+}
+
+main {
+    padding: 20px;
+}
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: solid 1px white;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+.menu ul {
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    display: flex;
+}
+
+.menu li {
+    border-right: solid 1px white;
+}
+
+.menu li {
+    text-align: center;
+    flex-grow: 1;
+}
+
+
+.menu li:hover {
+    background: rgba(0,0,0,0.3);
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    header label {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        background: #4E94AB;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        border-top: solid 1px white;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+}
+
+.btn-registro {
+    margin: 0px;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: right;
+}
+
+#button_register {
+    border-radius: 10px;
+    border-width: 1px;
+    border-color:white;
+    width: 80px;
+    height: 30px;
+    text-decoration: none;
+    background: #4E94AB;
+}
+
+#button_register:hover {
+    background: rgba(0,0,0,0.3);
+}
+
+.btn-registro button a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+#tituloRegistro {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.menuRegistroUsuario {
+    display: flex;
+    justify-content: center;
+    color: #4E94AB;
+}
+
+.menuRegistroUsuario ul {
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuRegistroUsuario ul li {
+    padding: 3px;
+}
+
+#newregister {
+    padding: 5px;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color:#4E94AB;
+    width: 80px;
+    height: 30px;
+    text-decoration: none;
+    background: white;
+    color: #4E94AB;
+    margin-top: 10px;
+}
+
+#newregister:hover {
+    background: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+
+
+
