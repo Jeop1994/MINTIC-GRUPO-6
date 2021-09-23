@@ -20,30 +20,28 @@
 
     <main>
         <div class="menuRegistroUsuario" id="form">
-            <form action="Registrar.php" method="post" onsubmit="return validar_usuario();">
+            <form action="" method="post" onsubmit="validar_usuario(campoUsuario);validar_contrasena(campoContrasena); return false">
                 <ul>
                     <li><label>Nombre Completo:*</label></li>
-                    <li><input id="campo1" type="text" required></li>
+                    <li><input id="campo1" type="text"></li>
                     <li><label>Nombre de usuario:*</label></li>
-                    <li><input id="campoUsuario" type="text" required></li>
+                    <li><input id="campoUsuario" type="text"></li>
                     <li><label>Contraseña:*</label></li>
-                    <li><input id="campoConstrasena" type="password" required></li>
+                    <li><input id="campoContrasena" type="password"></li>
                     <li><label>Confirmación de contraseña:*</label></li>
-                    <li><input id="campo4" type="password" required></li>
+                    <li><input id="campo4" type="password"></li>
                     <li><label>Correo electrónico:*</label></li>
-                    <li><input id="campo5" type="email" required></li>
+                    <li><input id="campo5" type="email"></li>
                     <li><label>Confirmación de correo:*</label></li>
-                    <li><input id="campo6" type="email" required></li>
+                    <li><input id="campo6" type="email"></li>
                     <li><label>Telefono:*</label></li>
-                    <li><input id="campo7" type="text" required></li>
+                    <li><input id="campo7" type="text"></li>
                     <li><label>Dirección de residencia:*</label></li>
-                    <li><input id="campo8" type="text" required></li> 
+                    <li><input id="campo8" type="text"></li> 
                     <input type="submit" id="newregister" value="Registrar"> 
-                </ul>
-                
+                </ul>    
             </form>    
         </div>
     </main>
-    
 </body>
 </html>
