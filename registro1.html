@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="estilo1.css">
+    <script src="form1.js"></script>
 </head>
 <body>
     <header>
@@ -19,28 +20,28 @@
 
     <main>
         <div class="menuRegistroUsuario" id="form">
-            <form action="">
+            <form action="Registrar.php" method="post" onsubmit="return validar_usuario();">
                 <ul>
                     <li><label>Nombre Completo:*</label></li>
-                    <li><input id="campo1" type="text"></li>
+                    <li><input id="campo1" type="text" required></li>
                     <li><label>Nombre de usuario:*</label></li>
-                    <li><input id="campoUsuario" type="text"></li>
+                    <li><input id="campoUsuario" type="text" required></li>
                     <li><label>Contraseña:*</label></li>
-                    <li><input id="campoConstrasena" type="password"></li>
+                    <li><input id="campoConstrasena" type="password" required></li>
                     <li><label>Confirmación de contraseña:*</label></li>
-                    <li><input id="campo4" type="password"></li>
+                    <li><input id="campo4" type="password" required></li>
                     <li><label>Correo electrónico:*</label></li>
-                    <li><input id="campo5" type="email"></li>
+                    <li><input id="campo5" type="email" required></li>
                     <li><label>Confirmación de correo:*</label></li>
-                    <li><input id="campo6" type="email"></li>
+                    <li><input id="campo6" type="email" required></li>
                     <li><label>Telefono:*</label></li>
-                    <li><input id="campo7" type="text"></li>
+                    <li><input id="campo7" type="text" required></li>
                     <li><label>Dirección de residencia:*</label></li>
-                    <li><input id="campo8" type="text"></li>  
+                    <li><input id="campo8" type="text" required></li> 
+                    <input type="submit" id="newregister" value="Registrar"> 
                 </ul>
-                <input type="submit" id="newregister" value="Registro" onclick='return validar_usuario();'>
+                
             </form>    
-            <div id="error"></div>
         </div>
     </main>
     
