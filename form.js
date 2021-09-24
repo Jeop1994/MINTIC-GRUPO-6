@@ -1,22 +1,58 @@
-var nombreUsuario = document.getElementsById("campoUsuario");
-var contrasena = document.getElementsById("campoConstrasena");
-var error = document.getElementsById("error");
-error.style.color = "red"; 
+function validar_usuario(string) {
+    var nombreUsuario;
+    nombreUsuario = string.value;
+    let alfanum = /\w/;
+    let mayus = /[A-Z]/;
 
-function validar_usuario() {
-    console.log("Enviando formulario...");
-
-    var mensajesError = [];
-
-    if (nombreUsuario === null || nombreUsuario.value === ""){
-        mensajesError.push("Ingresa tu nombre");
+    if (nombreUsuario === "") {
+        alert("El campo usuario esta vacío");
+        return false;
     }
-
-    if (contrasena === null || contrasena.value === ""){
-        mensajesError.push("Ingresa tu contraseña");
+    else if (!alfanum.test(nombreUsuario)) {
+        alert("Solo debe contener caracteres alfanuméricos.");
+        return false;
     }
-
-    error.innerHTML = mensajesError.join(", ");
-
-    return false;
+    else if (nombreUsuario.length<6) {
+        alert("Debe tener una longitud mínima de 6 caracteres.");
+        return false;
+    }
+    else if (!mayus.test(nombreUsuario.charAt(0))) {
+        alert("Debe comenzar por una letra mayúscula.");
+        return false;
+    }
+    else if (nombreUsuario.length>12) {
+        alert("Debe tener una longitud máxima de 12 caracteres.");
+        return false;
+    }
 }
+
+function validar_contrasena(string) {
+    var contrasena;
+    contrasena = string.value;
+    let caracespe = /\!|\@|\#|\-|\_/;
+    let mayus = /[A-Z]/;
+
+    if (contrasena === "") {
+        alert("El campo contraseña esta vacío");
+        return false;
+    }
+    else if (!caracespe.test(contrasena)) {
+        alert("Debe contener al menos alguno de los siguientes caracteres especiales: ‘!’, ‘@’, ‘#’, ‘-’, ‘_’");
+        return false;
+    }
+    else if (contrasena.length<8) {
+        alert("Debe tener una longitud mínima de 8 caracteres.");
+        return false;
+    }
+    else if (!mayus.test(contrasena.charAt(0))) {
+        alert("Debe comenzar por una letra mayúscula.");
+        return false;
+    }
+    else if (contrasena.length>16) {
+        alert("Debe tener una longitud máxima de 16 caracteres..");
+        return false;
+    }
+}
+
+module.exports.validar_usuario = validar_usuario;
+module.exports.validar_contrasena = validar_contrasena;
