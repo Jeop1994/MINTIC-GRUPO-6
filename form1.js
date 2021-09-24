@@ -1,14 +1,14 @@
 function validar_usuario(string) {
     var nombreUsuario;
     nombreUsuario = string.value;
-    let alfanum = /\w/;
+    let alfanum = /^[a-zA-Z0-9]$/;
     let mayus = /[A-Z]/;
 
     if (nombreUsuario === "") {
         alert("El campo usuario esta vacío");
         return false;
     }
-    else if (!alfanum.test(nombreUsuario)) {
+    else if (alfanum.test(nombreUsuario)) {
         alert("Solo debe contener caracteres alfanuméricos.");
         return false;
     }

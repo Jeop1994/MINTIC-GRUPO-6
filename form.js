@@ -1,7 +1,7 @@
 function validar_usuario(string) {
     var nombreUsuario;
     nombreUsuario = string.value;
-    let alfanum = /\w/;
+    let alfanum = /[a-zA-Z0-9]/;
     let mayus = /[A-Z]/;
 
     if (nombreUsuario === "") {

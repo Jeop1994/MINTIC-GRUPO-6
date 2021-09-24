@@ -162,6 +162,10 @@ header label:hover {
     cursor: pointer;
 }
 
+img {
+    width: 100%;
+}
+
 
 
 
